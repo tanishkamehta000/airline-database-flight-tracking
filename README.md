@@ -6,12 +6,12 @@ To set up the app, first install Node.js and Python 3. Create a virtual environm
 
 ```bash
 mysql -u root -p
-```sql
+sql
 DROP DATABASE IF EXISTS flight_tracking;
 CREATE DATABASE flight_tracking;
 USE flight_tracking;
 EXIT;
-```bash
+bash
 mysql -u root -p flight_tracking < schema.sql
 mysql -u root -p flight_tracking < procedures.sql
 
