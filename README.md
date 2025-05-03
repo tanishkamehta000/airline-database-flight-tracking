@@ -3,11 +3,15 @@
 1. Instructions to setup your app
 To set up the app, first install Node.js and Python 3. Create a virtual environment and install the necessary dependencies (pip install -r requirements.txt). Then configure the .env file to your specific MySQL information, and set up the database/stored procedures by running the following instructions:
 
+
+```bash
 mysql -u root -p
-> DROP DATABASE IF EXISTS flight_tracking;\newline
-> CREATE DATABASE flight_tracking;
-> USE flight_tracking;
-> EXIT;
+```sql
+DROP DATABASE IF EXISTS flight_tracking;
+CREATE DATABASE flight_tracking;
+USE flight_tracking;
+EXIT;
+```bash
 mysql -u root -p flight_tracking < schema.sql
 mysql -u root -p flight_tracking < procedures.sql
 
