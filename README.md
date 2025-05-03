@@ -11,7 +11,7 @@ DROP DATABASE IF EXISTS flight_tracking;
 CREATE DATABASE flight_tracking;
 USE flight_tracking;
 EXIT;
-bash
+bash```
 mysql -u root -p flight_tracking < schema.sql
 mysql -u root -p flight_tracking < procedures.sql
 
